@@ -72,75 +72,46 @@ nav li a {
 .blogs{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    row-gap: 24px;
+    row-gap: 34px;
     margin-left: 25px;
     column-gap: 17px;
 }
 .blog{
     width: 312px;
-    height: 362px;
-
-}
-.blog:hover{
-    border: ;
+    height: 222px;
+    border-radius: 10px;
+    background-color: lightgray;
+    padding: 35px;
+    margin: 10px 10px 0 10px;
 }
 .blog-img{
-
+    display: flex;
+    justify-content: space-between;
 }
 .blog-details{
-    padding-left: 15px;
-
-}
-.blog-details h4{
-    width: 100px;
-    height: 32px;
-    border:1px solid black;
-    border-radius: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #161616;
     text-align: center;
-   
+    padding-left: 20px;
 }
-
-.blog-details p{
-    color: black;
-    width: 272px;
-    height: 54px;
+.blog-details h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
+    color: #161616;
+    width: 250px;
+    height: 25px;
+    text-align: center;
 }
-.blog-info{
-    display: flex;
-    
-    align-items: center;
-
-}
-.time{
-    
-    
-    
-    Weight:400;
-    
-    Size:16px;
-    
-
-}
-.chat{
-   
-    Weight:400;
-    
-    Size:16px;
-    
-
-}
-.seperation{
-    margin-left: 10px;
+.blog-details p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4d4d4d;
+    width: 166px;
+    height: 20px;
+    text-align: center;
+    padding-left: 34px;
 }
 
-/* navbar and blogs end */
 /* footer start */
 footer{
     width: 100%;
@@ -217,9 +188,7 @@ footer hr{
         margin-left: 25px;
         column-gap: 17px;
     }
-    .hidden-btn{
-       visibility: hidden;
-    }
+   
     footer{
         width: 100%;
         height: 800px;
@@ -235,6 +204,7 @@ footer hr{
 
     }
 }
+
 /* For tablet */
 @media only screen and (min-width:689px) and (max-width:992px){
     .container{
@@ -279,7 +249,7 @@ footer hr{
     .blogs{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        row-gap: 24px;
+        row-gap: 34px;
         margin-left: 25px;
         column-gap: 17px;
         width: 100%;
@@ -287,8 +257,12 @@ footer hr{
     .blog{
         width: 50%;
         
-        height: 362px;
+        height: 222px;
     
+    }
+    .blog-details{
+        padding-left: 0px;
+        
     }
     
     
